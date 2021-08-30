@@ -1,0 +1,238 @@
+/* body */
+body {
+  background-color: #fafafa;
+  box-sizing: border-box;
+}
+body a {
+  text-decoration: none;
+}
+
+/* header */
+header {
+  background: #4C3398;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+header .container ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header .container ul li {
+  list-style: none;
+  list-style-image: none;
+  margin-top: 5px;
+  border-radius: 6px 6px 0 0;
+  margin-left: 1px;
+}
+header .container ul li.active, header .container ul li:hover {
+  background-color: #5D3EBC;
+}
+header .container ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 40px;
+}
+header .container ul li a img {
+  height: 16px;
+}
+header .container nav {
+  display: flex;
+}
+header .container nav a {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  color: #DBDBFF;
+  margin: 0 10px;
+  font-size: 14px;
+  margin-right: 20px;
+}
+header .container nav a svg {
+  font-size: 14px;
+  margin-right: 10px;
+}
+header .container nav a:hover {
+  color: #fff;
+}
+
+.hero-header {
+  height: 500px;
+}
+.hero-header .slider {
+  position: relative;
+}
+.hero-header .slider .slider-inner img, .hero-header .slider .slider-inner svg {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.hero-header .slider .slider-inner .slider-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #5d3ebc 0%, rgba(93, 62, 188, 0) 100%);
+}
+.hero-header .slider .slider-inner .slider-area .container {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-header .slider .slider-inner .slider-area .container .left-area {
+  display: flex;
+  flex-direction: column;
+}
+.hero-header .slider .slider-inner .slider-area .container .left-area span.slogan {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 40px;
+  letter-spacing: -0.5px;
+  text-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px;
+  line-height: 40px;
+}
+.hero-header .slider .slider-inner .slider-area .container .right-area .login {
+  gap: 8px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  box-shadow: rgba(93, 62, 188, 0.12);
+  border-radius: 8px;
+  z-index: 10;
+  padding: 24px;
+  margin-top: 24px;
+}
+.hero-header .slider .slider-inner .slider-area .container .right-area .login .login-title {
+  color: #5d3ebc;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+}
+.hero-header .slider .slider-inner .slider-area .container .right-area .login .input-area {
+  display: flex;
+  margin-bottom: 6px;
+}
+.hero-header .slider .slider-inner .slider-area .container .right-area .login .input-area input {
+  padding-left: 14px;
+  padding-right: 14px;
+  border: 2px solid #dfdee2;
+  border-radius: 4px;
+  transition: border-color 0.4s ease 0s;
+  background-color: #fff;
+  height: 56px;
+  font-size: 14px;
+}
+.hero-header .slider .slider-inner .slider-area .container .right-area .login .input-area input.phone-code {
+  width: 110px;
+}
+.hero-header .slider .slider-inner .slider-area .container .right-area .login .input-area input.phone-number {
+  width: 100%;
+  padding-top: 10px;
+}
+.hero-header .slider .slider-inner .slider-area .container .right-area .login .input-area input:hover {
+  outline: 0;
+  border-color: #4C3398;
+}
+.hero-header .slider .slider-inner .slider-area .container .right-area .login .input-area input:focus {
+  outline: 0;
+  border-color: #4C3398;
+}
+.hero-header .slider .slider-inner .slider-area .container .right-area .login .input-area .phone-code-input {
+  width: 110px;
+  margin-right: 8px;
+}
+.hero-header .slider .slider-inner .slider-area .container .right-area .login .input-area .phone-code-input label {
+  display: none;
+}
+.hero-header .slider .slider-inner .slider-area .container .right-area .login .input-area .phone-input {
+  flex: 1;
+  position: relative;
+}
+.hero-header .slider .slider-inner .slider-area .container .right-area .login .input-area .phone-input label {
+  position: absolute;
+  left: 14px;
+  top: 5px;
+  color: #4C3398;
+  font-size: 13px;
+  cursor: text;
+}
+.hero-header .slider .slider-inner .slider-area .container .right-area .login hr {
+  background-color: #d4d3d4;
+  width: 100%;
+  height: 2px;
+}
+.hero-header .slider .slider-inner .slider-area .container .right-area .login .with-phone-btn {
+  background-color: #ffd300;
+  color: #5d3ebc;
+  width: 100%;
+  height: 48px;
+  white-space: nowrap;
+  border: 0px none;
+  transition: all 0.2s ease 0s;
+  box-shadow: rgba(105, 116, 136, 0.15) 0px 2px 6px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.16px;
+}
+.hero-header .slider .slider-inner .slider-area .container .right-area .login .with-phone-btn:hover {
+  background-color: #5d3ebc;
+  color: #ffd300;
+}
+.hero-header .slider .slider-inner .slider-area .container .right-area .login .with-facebook-btn {
+  background-color: rgba(60, 90, 153, 0.1);
+  color: #3c5a99;
+  width: 100%;
+  height: 48px;
+  white-space: nowrap;
+  border: 0px none;
+  transition: all 0.2s ease 0s;
+  box-shadow: rgba(105, 116, 136, 0.15) 0px 2px 6px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.16px;
+  display: flex;
+  align-items: center;
+}
+.hero-header .slider .slider-inner .slider-area .container .right-area .login .with-facebook-btn:hover {
+  background-color: #3c5a99;
+  color: #fff;
+}
+.hero-header .slider .slider-inner .slider-area .container .right-area .login .with-facebook-btn:hover img, .hero-header .slider .slider-inner .slider-area .container .right-area .login .with-facebook-btn:hover svg {
+  color: #fff;
+}
+.hero-header .slider .slider-inner .slider-area .container .right-area .login .with-facebook-btn span {
+  margin-right: auto;
+  margin-left: auto;
+}
+.hero-header .slider .slider-inner .slider-area .container .right-area .login .with-facebook-btn img, .hero-header .slider .slider-inner .slider-area .container .right-area .login .with-facebook-btn svg {
+  margin-left: 8px;
+  width: 24px;
+  height: 24px;
+  color: #3c5a99;
+}
+.hero-header .slider .slider-inner .slider-area .container img, .hero-header .slider .slider-inner .slider-area .container svg {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.categories {
+  background: #fff;
+  padding: 24px;
+  box-shadow: rgba(88, 63, 181, 0.08) 0px 2px 16px;
+}
+
+/*# sourceMappingURL=index.css.map */
